@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.h-primary {
+    font-size: 40px;
+    padding: 12px;
+    font-family: "Bree", sans-serif;
+}
+.center{
+    text-align: center;
+}
+
+/* header */
+header {
+    overflow: hidden;
+    max-width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+    color: white;
+}
+
+b {
+    color: red;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 70px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    display: flex;
+    font-size: 2em;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 0.5rem 1rem;
+    transition: 1s ease-out;
+}
+
+.menu a:nth-child(5) {
+    background: rgb(242, 152, 49);
+    border-radius: 8px;
+    margin: 0 1rem;
+}
+
+.menu a:nth-child(5):hover {
+    background-color: bisque;
+    color: black;
+    transition: 1s ease-in;
+}
+
+.menu a:hover {
+    color: rgb(241, 5, 5);
+    border-radius: 8px;
+
+}
+
+.container {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+
+.left {
+    width: 30%;
+    flex-basis: 60%;
+}
+
+.right {
+    transition: 1s ease;
+    width: 70%;
+    flex-basis: 30%;
+}
+
+.right:hover {
+    filter: drop-shadow(4px 4px 4px rgb(72, 69, 69));
+}
+
+.left h2 {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(200, 54, 54);
+}
+
+.left h1 {
+    font-family: 'Kalam', cursive;
+
+}
+
+.left p {
+    font-family: 'Poppins', sans-serif;
+    line-height: 2.5rem;
+}
+
+.port {
+    width: 1000px;
+}
+
+#hire {
+    max-width: 50%;
+    text-decoration: none;
+    background-color: rgb(190, 13, 13);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    margin: 0 1rem;
+    transition: 1s ease-in;
+}
+
+#hire:hover {
+    background-color: bisque;
+    color: black;
+    border-radius: 50%;
+}
+
+#myp {
+    max-width: 50%;
+    text-decoration: none;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    margin: 0 1rem;
+    border: 1px dashed white;
+    transition: 1s ease-out;
+}
+
+#myp:hover {
+    color: rgb(241, 5, 5);
+    border-radius: 50%;
+
+}
+
+/* bio section */
+#bio {
+    cursor: pointer;
+    padding: 120px 60px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif;
+}
+
+.leftbio {
+    width: 30%;
+}
+
+.leftbio img:hover {
+    opacity: 1;
+    border-radius: 50%;
+}
+
+.rightbio {
+    width: 70%;
+}
+
+.leftbio img {
+    filter: drop-shadow(1px 1px 10px rgb(143, 132, 132));
+    transition: 2s ease-in;
+    width: 100%;
+    height: 500px;
+    border-radius: 50px;
+    opacity: 0.5;
+}
+
+.rightbio {
+    text-align: right;
+    padding: 0 40px;
+}
+
+.rightbio p {
+    margin: 15px 0;
+    line-height: 2.5rem;
+
+}
+
+.rightbio h1 {
+    font-size: 3rem;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+#follow {
+    text-align: center;
+
+}
+
+#follow i {
+    color: rgb(234, 41, 41);
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+}
+
+.link-h {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+#hire {
+    width: fit-content;
+    text-align: center;
+}
+
+#cv {
+    text-align: center;
+    width: fit-content;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    border: 1px dashed grey;
+    transition: 1s ease-out;
+}
+
+#cv:hover {
+    color: rgb(241, 5, 5);
+    border-radius: 50%;
+}
+
+/* services section */
+#services {
+    padding: 50px 70px;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(162, 197, 209, 0.2); */
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 3rem;
+}
+
+.card {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.cardbody {
+    width: 25%;
+    background: rgb(255, 254, 253);
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 10px;
+    transition: 1s ease-in;
+    animation: card 2s ease-in-out 1s alternate infinite;
+}
+
+@keyframes card {
+    100% {
+        box-shadow: 2px 2px 10px grey;
+    }
+}
+
+.cardbody:hover {
+    border-radius: 50px;
+}
+
+.cardbody h3 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.cardbody i {
+    font-size: 2.5rem;
+    color: rgb(234, 41, 41);
+}
+
+/* footer */
+#contact {
+    background: white;
+}
+
+#contact h1 {
+    padding: 25px;
+    color: rgb(12, 12, 12);
+    text-shadow: 1px 1px 5px rgb(212, 210, 210), 1px 1px 10px rgb(173, 171, 171);
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+    color: rgb(17, 16, 16);
+    background-color: rgb(213, 211, 211);
+}
+
+input:focus {
+    background-color: antiquewhite;
+}
+
+textarea:focus {
+    background-color: antiquewhite;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    color: white;
+    font-size: 25px;
+    font-family: "Anta", sans-serif;
+}
+
+#submit {
+    width: 120px;
+    border: 2px solid white;
+    background-color: rgb(251, 249, 249);
+    color: rgb(177, 172, 172);
+    font-size: 20px;
+    border-radius: 10px;
+    font-family: "Anta", sans-serif;
+    cursor: pointer;
+    transition: 1s ease-in;
+}
+
+#submit:hover {
+    color: rgb(61, 60, 60);
+    background-color: rgb(244, 168, 75);
+    border: none;
+    border-radius: 15px;
+
+}
+
+/* media query */
+@media screen and (max-width:900px) {
+    .menu {
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .menu a {
+        padding: 10px;
+    }
+
+    #bio {
+        flex-direction: column;
+    }
+
+    .leftbio {
+        width: 80%;
+        position: relative;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    .rightbio {
+        width: 100%;
+        text-align: center;
+    }
+
+    .link-h {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #cv {
+        margin-top: 10px;
+    }
+
+    .cardbody {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:497px) {
+    .logo {
+        position: absolute;
+        left: 0;
+        font-size: 25px;
+    }
+
+    .left {
+        margin-left: 0px;
+        position: relative;
+        left: 0px;
+        font-size: 10px;
+    }
+
+    .cardbody {
+        width: 120%;
+    }
+
+    .left p {
+        line-height: 1.8rem;
+    }
+}
